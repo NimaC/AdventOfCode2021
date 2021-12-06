@@ -1,14 +1,9 @@
 import { readFileSync } from "fs";
 
 // expects number on each line in a txt file
-function textFileToNumbers(filePath: string): number[] {
+function textFileToStringLines(filePath: string): string[] {
   const fileContent = readFileSync(filePath, "utf8");
-  return fileContent
-    .trim()
-    .split("\n")
-    .map((line) => {
-      return parseInt(line, 10);
-    });
+  return fileContent.trim().split("\n");
 }
 
-export { textFileToNumbers };
+export { textFileToStringLines as textFileToStringLines };
