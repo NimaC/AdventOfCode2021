@@ -1,5 +1,5 @@
 import { textFileToStringLines } from "../utility/utility";
-import { sweep } from "./sweep/sweep";
+import sweep from "./sweep2/sweep";
 
 function main() {
   const pathToInput = "1/input.txt";

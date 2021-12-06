@@ -1,4 +1,4 @@
-function sweep(sweeps: number[]): number {
+export default function sweep(sweeps: number[]): number {
   //return the number of elements that are bigger than the previous element
   let result = 0;
   for (let i = 1; i < sweeps.length; i++) {
@@ -8,5 +8,3 @@ function sweep(sweeps: number[]): number {
   }
   return result;
 }
-
-export { sweep };
